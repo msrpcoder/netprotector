@@ -70,5 +70,5 @@ class UserDataScrapperBase(CredentialsMixin, Scrapper):
         return scrapped_data
 
 
-class UserDataScrapper(UserDataScrapeMixin, UserDataScrapperBase):
+class UserDataScrapper(UserDataScrapeMixin, UserDataScrapperBase, ABC):
     pass
