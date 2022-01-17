@@ -9,6 +9,9 @@ sleep 5
 echo "starting elasticsearch"
 sudo service elasticsearch restart
 
+echo "Deleting existing postgres container."
+docker rm net_protector_pg
+
 echo "starting potgresql"
 sudo docker run --name net_protector_pg -e POSTGRES_PASSWORD=postgres -v /home/pcs/pg-data/:/var/lib/postgresql/data -p 5432:5432 -d postgres:13
 

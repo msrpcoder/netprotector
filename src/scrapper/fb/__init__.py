@@ -3,7 +3,7 @@ from datetime import datetime
 from facebook_scraper import _scraper, exceptions, get_posts
 
 from credentials import get_credentials
-from scrapper.base import UserDataScrapper, Scrapper, CredentialsMixin, UserDataScrapperBase
+from scrapper.base import UserDataScrapper, UserDataScrapperBase
 
 logger = logging.getLogger(__file__)
 
